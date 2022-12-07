@@ -20,7 +20,7 @@ client.setup_logging()
 
 @app.route("/")
 def index():
-    return f"AVI Aircraft Sensor, Aviatar, id={SENSOR_ID}"
+    return f"AVI Aircraft Sensor., Aviatar, id={SENSOR_ID}"
 
 
 @app.route("/send_report")
