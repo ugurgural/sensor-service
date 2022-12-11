@@ -1,6 +1,6 @@
 resource "google_pubsub_topic" "sensor_data" {
   name    = "sensor-data"
-  project = "stately-diagram-370913"
+  project = var.project
 }
 
 resource "google_storage_bucket" "project-buckets" {
