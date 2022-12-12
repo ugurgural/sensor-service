@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "aviatar-euw3-sensor-service-01" {
-  name     = "aviatar-euw3-sensor-service-01"
+  name     = "aviatar-euw3-sensor-service-01-test"
   location = var.region
   project = var.project
 
@@ -28,7 +28,7 @@ resource "google_cloud_run_service" "aviatar-euw3-sensor-service-01" {
 }
 
 resource "google_cloud_run_service" "aviatar-euw3-sensor-service-02" {
-  name     = "aviatar-euw3-sensor-service-02"
+  name     = "aviatar-euw3-sensor-service-02-test"
   location = var.region
   project = var.project
 

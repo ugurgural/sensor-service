@@ -20,6 +20,14 @@ module "cloud_run" {
   project = var.project
 }
 
+module "cloud_scheduler" {
+  source = "./modules/cloud-scheduler"
+  project = var.project
+  region = var.region
+  sensor_service_01_url = module.cloud_run.service_01_url
+  sensor_service_02_url = module.cloud_run.service_02_url
+}
+
 module "pubsub" {
   source = "./modules/pub-sub"
   region = var.region
